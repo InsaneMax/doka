@@ -1,3 +1,2 @@
-body {
-
-}
+@import "normalize.less";
+@import "global/global.less";

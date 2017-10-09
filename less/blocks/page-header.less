@@ -1,5 +1,4 @@
 .page-header {
-	background-color: @light-green;
 	min-height: 300px;
 }
 
@@ -17,14 +16,53 @@
 }
 
 .page-header__title {
-	padding: 5px 10px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 35px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .page-header__profession {
+	font-weight: normal;
+	text-align: center;
+	padding: 5px 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
+.page-header__social {
+	display: flex;
+	justify-content: center;
 }
 
 .page-header__link {
+	display: inline-block;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	margin: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../img/css_sprites.png");
+	&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+	}
+	&:active {
+		  background-color: rgba(0, 0, 0, 0.5);
+		  opacity: 0.3;
+	}
+}
 
+.page-header__link--twitter {
+	background-position: -176px -7px;
+}
+
+.page-header__link--instagram {
+	background-position: -62px -7px;
+}
+
+.page-header__link--dribbble {
+	background-position: -234px -7px;
+}
+
+.page-header__link--telegram {
+	background-position: -119px -7px;
 }

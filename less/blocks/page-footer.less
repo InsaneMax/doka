@@ -1,3 +1,53 @@
-main p {
+.page-footer {
+	padding: 20px 0;
+}
 
+.page-footer__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.container();
+}
+
+.page-footer__social {
+	display: flex;
+	justify-content: center;
+}
+
+.page-footer__link {
+	display: inline-block;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	margin: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../img/css_sprites.png");
+	&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+	}
+	&:active {
+		  background-color: rgba(0, 0, 0, 0.5);
+		  opacity: 0.3;
+	}
+}
+
+.page-footer__copyright {
+	align-self: center;
+	text-align: center;
+}
+
+.page-footer__link--twitter {
+	background-position: -176px -7px;
+}
+
+.page-footer__link--instagram {
+	background-position: -62px -7px;
+}
+
+.page-footer__link--dribbble {
+	background-position: -234px -7px;
+}
+
+.page-footer__link--telegram {
+	background-position: -119px -7px;
 }

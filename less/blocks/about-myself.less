@@ -1,3 +1,105 @@
 .about-myself {
-	
+	.container();
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+.about-myself__represent {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-myself__heading {
+	font-size: 19px;
+	line-height: 19px;
+}
+
+.about-myself__pic {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: @dark-gray;
+	align-self: center;
+}
+
+.about-myself__btn {
+	position: relative;
+	padding: 10px 20px;
+	padding-left: 50px;
+	margin: 15px;
+	background-color: #3f8dbf;
+	color: #ffffff;
+	text-transform: uppercase;
+	align-self: center;
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #3678a3;
+	border-radius: 5px;
+	&:hover {
+		background-color: #1c618c;
+		border-bottom: 3px solid #12496b;
+	}
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.about-myself__btn::before {
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 3px;
+	width: 35px;
+	height: 35px;
+	background-image: url("../img/css_sprites.png");
+	background-position: -119px -10px;
+}
+
+@media @tablet-widths {
+	.about-myself__represent {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	}
+
+	.about-myself__pic {
+	width: 200px;
+	height: 200px;
+	margin-right: 25px;
+	}
+
+	.about-myself__main-text {
+	width: 60%;
+	}
+}
+
+@media @desktop-widths {
+	.about-myself__represent {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	}
+
+	.about-myself__pic {
+	width: 250px;
+	height: 250px;
+	}
+
+	.about-myself__main-text {
+	width: 70%;
+	align-self: center;
+	}
+
+	.about-myself__features {
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.about-myself__item {
+	margin: 10px 20px;
+	}
 }
